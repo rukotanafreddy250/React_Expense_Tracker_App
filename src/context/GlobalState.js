@@ -29,7 +29,7 @@ export const GlobalProvider = ({ children }) => {
         })
     }
   
-    function addTransactions (transaction) {
+    function addTransactionz (transaction) {
         dispatch({
             type : 'ADD_TRANSACTION',
             payload: transaction
@@ -40,7 +40,7 @@ export const GlobalProvider = ({ children }) => {
         {
             transactions: state.transactions,
             deleteTransactions,
-            addTransactions
+            addTransactionz
         }
     }>
             {children}
