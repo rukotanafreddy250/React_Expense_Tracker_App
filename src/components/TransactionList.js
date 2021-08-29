@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';  
 import { useContext, useReducer } from 'react';
 import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
