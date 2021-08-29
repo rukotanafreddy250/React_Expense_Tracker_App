@@ -4,7 +4,7 @@ import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
 import { LastTransation } from './LastTransation';
 
-
+   
 
 export const TransactionList = () => {
     const {transactions}  = useContext(GlobalContext);
@@ -12,7 +12,7 @@ export const TransactionList = () => {
     console.log(transactions);
     return (
         <div>
-            {
+            { 
                 transactions.map( (list) => (
                     <ul id= "list" className="list">
                         <LastTransation key={list.id} list={list} />
