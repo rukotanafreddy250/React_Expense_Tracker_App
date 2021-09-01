@@ -14,12 +14,12 @@ export const AddTransaction = () => {
             text,
             amount: +amount
         }
-        
+           
         setText(" ");
         setAmount(" ");
         addTransactionz(newTransaction);
     }
-
+    
     return (
         <div>
             <h3>Add new transaction</h3>

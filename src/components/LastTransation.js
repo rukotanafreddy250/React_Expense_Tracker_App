@@ -15,4 +15,4 @@ export const LastTransation = (props) => {
             </li>  
         </div>
     )
-}
+}   
