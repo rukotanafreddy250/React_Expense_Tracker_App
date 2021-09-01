@@ -11,7 +11,7 @@ export const TransactionList = () => {
     const reducer = useReducer(GlobalProvider);
     console.log(transactions);
     return (
-        <div>
+        <div>     
             { 
                 transactions.map( (list) => (
                     <ul id= "list" className="list">
