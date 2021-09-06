@@ -11,15 +11,15 @@ export const AddTransaction = () => {
         e.preventDefault();   
         const newTransaction = {
             id: Math.floor(Math.random()* 100000000),
-            text,
-            amount: +amount
+            text,  
+            amount: +amount   
         }
                  
         setText(" ");    
         setAmount(" ");
         addTransactionz(newTransaction);
     }
-    
+       
     return (    
         <div>
             <h3>Add new transaction</h3>
