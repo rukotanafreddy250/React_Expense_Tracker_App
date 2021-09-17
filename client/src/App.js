@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header} from './components/Header';
-import { Balance } from './components/Balance';
+import { Balances } from './components/Balances';
 import { IncomeExpense } from './components/IncomeExpense';
 import { TransactionList } from './components/TransactionList';
 import { AddTransaction } from './components/AddTransaction';
@@ -15,7 +15,7 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className="container">
-        <Balance />
+        <Balances />
         <IncomeExpense />
         <TransactionList />
         <AddTransaction />
