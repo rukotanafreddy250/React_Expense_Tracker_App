@@ -20,7 +20,7 @@ connectDB();
 
 
 app.use(express.json());
-
+   
 app.use('/api/v1/transactions', TransactionRoute);
 
 if(process.env.NODE_ENV === 'development') {

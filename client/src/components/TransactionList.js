@@ -4,7 +4,7 @@ import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
 import { LastTransation } from './LastTransation';
 
-   
+     
 
 export const TransactionList = () => {    
     const { transactions, getTransactions }  = useContext(GlobalContext);
