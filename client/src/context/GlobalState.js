@@ -19,7 +19,7 @@ export const GlobalContext = createContext(initialState);
 
   
 // for other component to access our strore is to create a global provider which provides the state for the whole applications
-
+   
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
     // useReducer manipules the state that is in use through AppReducer
@@ -30,7 +30,7 @@ export const GlobalProvider = ({ children }) => {
         try{
             const transactions = await axios.get("/api/v1/transactions");
             dispatch({
-                type: 'GET_TRANSACTIONS',
+                type: 'GET_TRANSACTIONS',  
                 payload : transactions.data.data
             });
 

@@ -5,7 +5,7 @@ import { GlobalContext } from '../context/GlobalState';
 export const Balances = () => {
     const { transactions } = useContext(GlobalContext);
   
-  console.log(transactions);
+  console.log(transactions);  
 
   const amounts = transactions.map(transaction => transaction.amount);
 
@@ -13,7 +13,7 @@ export const Balances = () => {
 
   return (
     <>
-      <h4>Your Balance</h4>
+      <h4>Your Balance</h4>   
     <h1>${/*numberWithCommas*/(total)}</h1>
     </>
   )
