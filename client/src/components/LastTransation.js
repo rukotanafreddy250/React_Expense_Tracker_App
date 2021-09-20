@@ -8,9 +8,9 @@ export const LastTransation = (props) => {
     // useEffect( () => {
     //     deleteTransactions();
     //     // eslint-diasable-next-line react-hoocks/exhaustive
-    // }, []);
+    // }, []);   
     // console.log(props);
-    return (   
+    return (       
         <div>
              <li className={props.list.amount < 0 ? 'minus' : 'plus'}>
                 {props.list.text} <span>{sign}${Math.abs(props.list.amount) }</span>
