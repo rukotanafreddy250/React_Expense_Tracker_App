@@ -23,14 +23,14 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
     // useReducer manipules the state that is in use through AppReducer
-
+   
     //get transactions  
     async function getTransactions () {
         // const transactions = await axios.get("/api/v1/transactions");
         try{
             const transactions = await axios.get("/api/v1/transactions");
             dispatch({
-                type: 'GET_TRANSACTIONS',  
+                type: 'GET_TRANSACTIONS',     
                 payload : transactions.data.data
             });
 

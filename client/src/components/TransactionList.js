@@ -4,7 +4,7 @@ import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
 import { LastTransation } from './LastTransation';
 
-     
+            
 
 export const TransactionList = () => {    
     const { transactions, getTransactions }  = useContext(GlobalContext);
@@ -12,7 +12,7 @@ export const TransactionList = () => {
 
     console.log(transactions);
     useEffect( () => {
-        getTransactions();
+        getTransactions();    
         //eslint-diasable-next-line react-hoocks/exhaustive
     }, []);
 
