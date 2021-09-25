@@ -11,11 +11,11 @@ export const TransactionList = () => {
     const reducer = useReducer(GlobalProvider);
 
     console.log(transactions);
-    useEffect( () => {
-        getTransactions();    
+    useEffect( () => {   
+        getTransactions();       
         //eslint-diasable-next-line react-hoocks/exhaustive
     }, []);
-
+    
     return (     
         <div>       
             {        

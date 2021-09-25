@@ -22,8 +22,8 @@ export const IncomeExpense = () => {
     console.log(income);
     return (
         <div className="inc-exp-container">
-            <div>
-                <h4>Income</h4>
+            <div>   
+                <h4>Income</h4>   
                 <p id="money-plus" className="money plus">+${income}</p>
             </div>
             <div>
