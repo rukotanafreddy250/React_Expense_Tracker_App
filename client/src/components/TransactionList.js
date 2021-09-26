@@ -4,7 +4,7 @@ import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
 import { LastTransation } from './LastTransation';
 
-            
+                 
 
 export const TransactionList = () => {    
     const { transactions, getTransactions }  = useContext(GlobalContext);
@@ -15,7 +15,7 @@ export const TransactionList = () => {
         getTransactions();       
         //eslint-diasable-next-line react-hoocks/exhaustive
     }, []);
-    
+       
     return (     
         <div>       
             {        
