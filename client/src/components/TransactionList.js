@@ -9,9 +9,9 @@ import { LastTransation } from './LastTransation';
 export const TransactionList = () => {    
     const { transactions, getTransactions }  = useContext(GlobalContext);
     const reducer = useReducer(GlobalProvider);
-
+    
     console.log(transactions);
-    useEffect( () => {   
+    useEffect( () => {      
         getTransactions();       
         //eslint-diasable-next-line react-hoocks/exhaustive
     }, []);
