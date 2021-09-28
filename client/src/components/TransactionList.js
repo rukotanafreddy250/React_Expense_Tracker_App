@@ -4,8 +4,8 @@ import { GlobalContext, GlobalProvider } from '../context/GlobalState';
 
 import { LastTransation } from './LastTransation';
 
-                 
-
+                 asdfa
+   
 export const TransactionList = () => {    
     const { transactions, getTransactions }  = useContext(GlobalContext);
     const reducer = useReducer(GlobalProvider);

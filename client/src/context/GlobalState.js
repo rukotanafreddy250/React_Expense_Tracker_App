@@ -3,6 +3,10 @@ import axios from 'axios'
 import AppReducer from "../components/AppReducer";
 
 
+//  asldkfjlkasdjflkadjsflkajsdfasd
+
+
+
 const initialState = {
     transactions : [],
         // [
@@ -30,8 +34,8 @@ export const GlobalProvider = ({ children }) => {
         try{      
             const transactions = await axios.get("/api/v1/transactions");
             dispatch({
-                type: 'GET_TRANSACTIONS',     
-                payload : transactions.data.data
+                type: 'GET_TRANSACTIONS',        
+                payload : transactions.data.data   
             });
 
         } catch(err) {
