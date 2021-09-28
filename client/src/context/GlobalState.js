@@ -5,7 +5,7 @@ import AppReducer from "../components/AppReducer";
 
 //  asldkfjlkasdjflkadjsflkajsdfasd
 
-
+   
 
 const initialState = {
     transactions : [],
