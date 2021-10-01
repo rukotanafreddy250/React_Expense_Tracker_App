@@ -12,6 +12,7 @@ export const TransactionList = () => {
     
     console.log(transactions);
     useEffect( () => {      
+        // useEffect its is used to ....
         getTransactions();       
         //eslint-diasable-next-line react-hoocks/exhaustive
     }, []);

@@ -5,7 +5,7 @@ import AppReducer from "../components/AppReducer";
 
 //  asldkfjlkasdjflkadjsflkajsdfasd
 
-   
+//    mongoose.connect
 
 const initialState = {
     transactions : [],
